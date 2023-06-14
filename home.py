@@ -12,7 +12,7 @@ df = tools.get_google_sheet(bbip_demo)
 
 st.write('# HBW metadata demo')
 st.write('**Full database**')
-st.write(df.head())
+st.write(df)
 
 
 with st.expander('Filter the database to include specific columns'):
@@ -39,7 +39,7 @@ if md_elements_button:
     if cols_to_include == []:
         cols_to_include = df.columns
     df_filtered = df[cols_to_include]
-    st.write(df_filtered.head())
+    st.write(df_filtered)
     st.download_button(label="Download filtered data as CSV",
                     data=df_filtered.to_csv(index=None).encode('utf-8'),
                     file_name='bbip_demo.csv',mime='text/csv')
