@@ -6,7 +6,7 @@ from scripts import tools
 tools.page_config()
 
 
-bbip_demo = 'https://docs.google.com/spreadsheets/d/1Rwosz1-ZvQlIJX1YBph9IAcHNQ5S0oXeMoKY7RZBxsM/edit#gid=0'
+bbip_demo = 'https://kansas.sharepoint.com/:x:/r/teams/bbipcorpus/Shared%20Documents/General/Inventory%20Scanning%20and%20OCR/test.xlsx?d=wcf7cdc7485184ca2b75ffbd148c3ad4d&csf=1&web=1&e=L4nfN0'
 
 df = tools.get_google_sheet(bbip_demo)
 
